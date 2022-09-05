@@ -3,7 +3,6 @@ import {Typography, Button, Form, Input} from 'antd';
 import FileUpload from '../../utils/FileUpload';
 
 
-
 const {TextArea} = Input;
  
 const Continents = [
@@ -46,15 +45,15 @@ function UploadProductPage() {
 
   return (
     <div style ={{maxWidth:'700px',margin:'2em auto'}}>
+        
+        
         <div style={{textAlign:'center',marginButtom:'2em'}}>
             <h2 level={2}>여행 상품 업로드</h2>
         </div>
         
-
-        <FileUpload/>
-
         <Form>
-          <br/>
+          
+        <FileUpload/>  
           <br/>
           <label>이름</label>
           <Input onChange ={titleChangeHandler} value={Title}/>
